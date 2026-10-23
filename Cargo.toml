@@ -1,0 +1,18 @@
+[package]
+name = "check-host-one"
+version = "1.0.0"
+edition = "2021"
+description = "Rust client for check-host.one: ping, TCP ping, HTTP, traceroute and DNS checks from 100+ countries"
+license = "MIT"
+homepage = "https://check-host.one"
+documentation = "https://check-host.one/docs#api"
+repository = "https://github.com/Check-Host-one/check-host-rust"
+keywords = ["ping", "traceroute", "dns", "network", "monitoring"]
+categories = ["network-programming", "api-bindings"]
+
+[lib]
+name = "checkhost"
+
+[dependencies]
+ureq = { version = "2", features = ["json"] }
+serde_json = "1"
